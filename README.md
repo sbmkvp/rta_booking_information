@@ -52,6 +52,9 @@ where this might fail.
  - RTA IT team blocks your IP
  - The website is very slow
 
+If the website is slow and the script fails at selecting the driving test on a new booking
+try increasing the wait_timer.
+
 ## Disclaimer:
 
  - For personal use only. 
