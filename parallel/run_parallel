@@ -1,0 +1,10 @@
+#! /bin/bash
+
+DATETIME="$(date +'%Y%m%d%H%M%S')"
+FILE="results/results_$DATETIME.json"
+
+rm results.json
+cat centres \
+      | parallel "./scrape_availability.py {} results.json"
+
+jq -s . results.json > $FILE
