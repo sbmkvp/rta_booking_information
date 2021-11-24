@@ -3,7 +3,7 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-content: flex-start;
-	justify-content: flex-start;
+  justify-content: center;
 	align-items: center;
 }
 
@@ -24,6 +24,7 @@
 	padding: 10px 2px;
 	color: #333;
 }
+
 .center-container {
 	width: 7em;
 	margin: 10px;
@@ -36,4 +37,24 @@
 	border-radius: 5px;
 	box-shadow: 0px 0px 3px 1px #0003;
 	min-height: 6em;
+}
+
+.center-container:hover {
+	align-items: center;
+	box-shadow: 0px 0px 5px 3px #0003;
+}
+
+#main-title {
+	font-size: 1.2em;
+	font-family: 'Roboto';
+	text-align: center;
+	margin-top: 20px;
+}
+
+#update-text {
+	font-size: 0.8em;
+	font-family: 'Roboto';
+	text-align: center;
+	margin: 5px 0px;
+	margin-bottom: 10px;
 }

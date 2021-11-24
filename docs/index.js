@@ -11,8 +11,16 @@ fetch('results.json')
           let center_container = $(`<div class="center-container"></div>`)
           if(center.availability==null){
 						center.availability = "🙁"
+						$(center_container).css('background','#D77D2222')
 					} else {
-						$(center_container).css('background','#d7ffca')
+            let availability = center.availability.split(' ')[0].split('/').reverse().join('-')
+            availability = new Date(Date.parse(availability))
+            let today = new Date()
+            let difference = (availability - today)/86400000
+						if(difference < 28) $(center_container).css('background','#DAEDC5')
+						if(difference < 21) $(center_container).css('background','#C4E6B1')
+						if(difference < 14) $(center_container).css('background','#AADE9E')
+						if(difference < 7) $(center_container).css('background','#8BD78B')
 					}
           let center_title = $(`<div class="center-title">${center.name}</div>`)
           let center_availability = $(`<div class="center-availability">${center.availability}</div>`)
@@ -22,3 +30,9 @@ fetch('results.json')
         }
       })
   })
+
+fetch('update-time.txt')
+	.then(response => response.text())
+	.then(update_time => {
+		$('#update-time').text(update_time)
+	})
