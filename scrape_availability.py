@@ -45,7 +45,7 @@ else:
 
 for option in options[1:]:
     time.sleep(1)
-    driver.find_element(By.ID,"rms_batLocLoc").click()
+    driver.find_element(By.ID,"rms_batLocLocSel").click()
     time.sleep(1)
     select_box = driver.find_element(By.ID,"rms_batLocationSelect2")
     Select(select_box).select_by_value(option)
