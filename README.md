@@ -4,7 +4,7 @@ Car Driving Test at all RTA Serivce NSW centres in the state.
 ## Dependencies
 
  1. Account with RTA NSW where you can have passed knowledge test, hazard test etc.
- 2. [chrome driver]() executable in your PATH variable
+ 2. [chrome driver](https://sites.google.com/chromium.org/driver/) executable in your PATH variable
  3. Python3 and Selenium installed
  4. Optional jq and R for creating reports from results
 
