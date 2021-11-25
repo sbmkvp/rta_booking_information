@@ -28,6 +28,10 @@ fetch('results.json')
           $(center_container).append(center_availability)
           $('#main-container').append(center_container)
         }
+        $('#main-container')
+          .children()
+          .sort((a,b)=>{return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase())})
+          .each((a,b)=>{$('#main-container').append(b)})
       })
   })
 
