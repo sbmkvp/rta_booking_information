@@ -3,8 +3,8 @@
 DATETIME="$(date +'%Y%m%d%H%M%S')"
 FILE="results/results_$DATETIME.json"
 
-rm results.json
+rm results.json errors.txt
 cat centres \
-      | parallel "./scrape_availability.py {} results.json"
+      | parallel "./scrape_availability.py {} results.json || echo {} >> errors.txt"
 
 jq -s . results.json > $FILE
