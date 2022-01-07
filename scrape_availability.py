@@ -26,7 +26,7 @@ else:
     driver.find_element(By.XPATH,'//*[text()="Book test"]').click()
     driver.find_element(By.ID,"CAR").click()
     time.sleep(settings['wait_timer'])
-    driver.find_element(By.ID,"DC").click()
+    driver.find_element(By.XPATH,"//fieldset[@id='DC']/span[contains(@class, 'rms_testItemResult')]").click()
     time.sleep(2)
     driver.find_element(By.ID,"nextButton").click()
     driver.find_element(By.ID,"checkTerms").click()
