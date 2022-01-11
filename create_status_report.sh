@@ -1,7 +1,7 @@
 #! /bin/bash
 
 cat $1 \
-  | jq -r '. | [.location, .result.ajaxresult.slots.nextAvailableDate] | @csv' \
+  | jq -r '.[] | [.location, .result.ajaxresult.slots.nextAvailableDate] | @csv' \
   | Rscript -e 'suppressMessages(library(tidyverse)); 
                 read_csv(file("stdin"),
                          col_names = c("location","next_available_time"), 

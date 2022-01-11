@@ -1,6 +1,8 @@
 This script scrapes and stores the availability of timeslots for 
 Car Driving Test at all RTA Serivce NSW centres in the state. 
 
+>> These instructions are outdated !!! update to follow
+
 ## Dependencies
 
  1. Account with RTA NSW where you can have passed knowledge test, hazard test etc.
