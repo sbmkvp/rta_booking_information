@@ -12,7 +12,8 @@ from selenium.webdriver.chrome.options import Options
 
 settings = json.load(open("settings.json"))
 chrome_options = Options()
-chrome_options.add_argument("--headless")
+if(settings['headless']):
+    chrome_options.add_argument("--headless")
 driver = webdriver.Chrome(options=chrome_options)
 driver.get("https://www.myrta.com/wps/myportal/extvp/myrta/")
 driver.find_element(By.ID,"widget_cardNumber").send_keys(settings['username'])
