@@ -1,9 +1,11 @@
 #! /bin/bash
 
 git_upload="$(jq '.git_upload' settings.json)"
+python3_exe="$(jq '.python3_executable' settings.json)"
+
 
 jq '.[].id' docs/centers.json \
-  | parallel "./scrape_availability.py {} results.json || echo {} >> errors.txt"
+  | parallel $python3_exe "./scrape_availability.py {} results.json || echo {} >> errors.txt"
 
 ERR_NUM="$(wc -l < errors.txt)"
 
