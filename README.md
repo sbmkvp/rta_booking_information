@@ -73,6 +73,12 @@ a simple http server at the docs folder by running,
 python3 -m http.server 8888
 ```
 This script and the one below works only in systems with POSIX compliant shell.
+For windows, please use a POSIX compliant shell like [git-bash](https://gitforwindows.org/) 
+or [cygwin](http://cygwin.com/). We also need to install 
+[jq](https://stackoverflow.com/questions/52393850/how-to-install-gnu-parallel-on-windows-10-using-git-bash)
+and [parallel](https://stackoverflow.com/questions/53967693/how-to-run-jq-from-gitbash-in-windows) for windows.
+You can also use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install) and 
+create a full linux environment inside windows.
 
 #### Create a csv report
 
