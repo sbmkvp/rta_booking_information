@@ -35,4 +35,6 @@ if [[ $git_upload == 'true' ]];
     	git push --quiet
 fi
 
+pkill chrome
+pkill Chrome
 echo "$(date +'[%T] :') All processes complete."
