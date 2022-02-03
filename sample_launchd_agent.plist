@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>EnvironmentVariables</key>
+	<dict>
+		<key>PATH</key>
+		<string>**COPY YOUR PATH VARIABLE HERE**</string>
+	</dict>
+	<key>Label</key>
+	<string>**NAME OF YOUR SERVICE EG com.user.rta_booking**</string>
+	<key>WorkingDirectory</key>
+  <string>**ABSOLUTE PATH TO YOUR REPOSITORY**</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>./get_all_locations.sh</string>
+	</array>
+	<key>StartInterval</key> 
+	<integer>**UPDATE INTERVAL IN SECONDS EG 3600 FOR HOURLY**</integer> 
+	<key>StandardOutPath</key>
+	<string>**ABSOLUTE PATH TO LOG FILE**</string>
+	<key>StandardErrorPath</key>
+	<string>**ABSOLUTE PATH TO ERROR FILE**</string>
+</dict>
+</plist>
