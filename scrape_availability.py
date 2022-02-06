@@ -54,3 +54,4 @@ try:
     driver.quit()
 except:
     driver.quit()
+    exit(1)
