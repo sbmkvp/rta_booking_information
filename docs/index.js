@@ -8,6 +8,7 @@ fetch('results.json')
         for(i in centers_data){
           let center = centers_data[i]
           center.name = centers_ids.find(d => d.id == center.location).name
+          center.dist_class = centers_ids.find(d => d.id == center.location).dist_class
           center.availability = center.result.ajaxresult.slots.nextAvailableDate
           let center_container = $(`<div class="center-container"></div>`)
 
@@ -29,13 +30,21 @@ fetch('results.json')
           let center_availability = $(`<div class="center-availability">${center.availability}</div>`)
           $(center_container).append(center_title)
           $(center_container).append(center_availability)
-          $('#main-container').append(center_container)
+
+          switch(center.dist_class){
+            case('< 50 km'): $('#lt50').append(center_container); break;
+            case('50 - 100 km'): $('#50t100').append(center_container); break;
+            case('100 - 250 km'): $('#100t250').append(center_container); break;
+            case('250 - 500 km'): $('#250t500').append(center_container); break;
+            case('> 500 km'): $('#gt500').append(center_container); break;
+          }
         }
 
-        $('#main-container')
-          .children()
-          .sort((a,b)=>{return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase())})
-          .each((a,b)=>{$('#main-container').append(b)})
+
+        $('.sub-container').each((id,element) => 
+          $(element).children()
+            .sort((a,b)=>{return $(a).text().toUpperCase().localeCompare($(b).text().toUpperCase())})
+            .each((a,b)=>{$(element).append(b)}))
 
       })
   })

@@ -1,10 +1,27 @@
 #main-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
   align-items: center;
+}
+
+.sub-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-container-label{
+	font-size: 17px;
+	font-family: 'Roboto';
+	color: #555;
+  margin-top:2em;
+  margin-bottom:10px;
 }
 
 .center-title {
