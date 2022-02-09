@@ -31,8 +31,9 @@
   <!-- Body of the application defining the DOM elements ----------------------->
   <body>
     <div id="app">
-      <div id="modal" onclick="$('#modal').css('display','none')">
-        <div id="modal-close" onclick="$('#modal').css('display','none')">✕</div>
+      <div id="modal-background" onclick="$('#modal').css('display','none'); $('#modal-background').css('display','none')"></div>
+      <div id="modal">
+        <div id="modal-close" onclick="$('#modal').css('display','none'); $('#modal-background').css('display','none')">✕</div>
         <div id="modal-title"></div>
         <div id="modal-content"></div>
       </div>

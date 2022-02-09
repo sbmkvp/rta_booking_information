@@ -31,6 +31,7 @@ fetch('results.json')
             $(center_container).on('click',()=>{
 							$('#modal-title').html(center.name)
               $('#modal-content').html(center.result.ajaxresult.slots.listTimeSlot.filter(a => a.availability).map(a=>a.startTime).join("<br>"))
+              $('#modal-background').css('display','block')
               $('#modal').css('display','block')
             })           
           }
