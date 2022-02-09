@@ -1,9 +1,6 @@
-let data
-
 fetch('results.json')
   .then(response => response.json())
   .then(centers_data => { 
-    data = centers_data
     fetch('centers.json')
       .then(response => response.json())
       .then(centers_ids => {
@@ -29,7 +26,7 @@ fetch('results.json')
             if(difference < 7) $(center_container).css('background','#8BD78B')
             $(center_container).css('cursor','pointer')
             $(center_container).on('click',()=>{
-							$('#modal-title').html(center.name)
+              $('#modal-title').html(center.name)
               $('#modal-content').html(center.result.ajaxresult.slots.listTimeSlot.filter(a => a.availability).map(a=>a.startTime).join("<br>"))
               $('#modal-background').css('display','block')
               $('#modal').css('display','block')
