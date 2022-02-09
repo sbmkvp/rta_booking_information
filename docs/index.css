@@ -75,3 +75,43 @@
   margin: 5px 0px;
   margin-bottom: 10px;
 }
+
+#modal {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  max-width: 75%;
+  min-width: 200px;
+	max-height: 75%;
+	background: #fff;
+	transform: translate(-50%, -50%);
+	align-items: center;
+	padding: 20px;
+	box-shadow: #00000029 0px 0 20px 20px;
+	border-radius: 15px;
+	overflow: scroll;
+}
+
+#modal-title {
+	text-align: left;
+	font-family: 'Roboto';
+	line-height: 1.75;
+	font-size: 17px;
+	font-weight: bolder;
+}
+
+#modal-content {
+	text-align: left;
+	font-family: 'Roboto';
+	line-height: 1.75;
+}
+
+#modal-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-family: 'Roboto';
+	font-weight: bold;
+	cursor: pointer;
+}
