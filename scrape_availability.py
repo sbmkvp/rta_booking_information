@@ -16,7 +16,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 driver = webdriver.Chrome(options=chrome_options)
 try:
-    driver.get("https://www.myrta.com/wps/myportal/extvp/myrta/")
+    driver.get("https://www.myrta.com/wps/portal/extvp/myrta/login/")
     driver.find_element(By.ID,"widget_cardNumber").send_keys(settings['username'])
     driver.find_element(By.ID,"widget_password").send_keys(settings['password'])
     time.sleep(settings['wait_timer'])
@@ -53,7 +53,7 @@ try:
     results_file = open(sys.argv[2],"a")
     results_file.write('{"location":"'+sys.argv[1]+'","result":'+json.dumps(result)+'}\n')
     results_file.close()
-    driver.quit()
+    # driver.quit()
 except:
-    driver.quit()
+    # driver.quit()
     exit(1)
