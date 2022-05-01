@@ -53,7 +53,7 @@ try:
     results_file = open(sys.argv[2],"a")
     results_file.write('{"location":"'+sys.argv[1]+'","result":'+json.dumps(result)+'}\n')
     results_file.close()
-    # driver.quit()
+    driver.quit()
 except:
-    # driver.quit()
+    driver.quit()
     exit(1)
