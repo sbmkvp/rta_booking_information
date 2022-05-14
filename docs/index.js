@@ -9,7 +9,7 @@ fetch('results.json')
           let center = centers_data[i]
           center.name = centers_ids.find(d => d.id == center.location).name
           center.dist_class = centers_ids.find(d => d.id == center.location).dist_class
-          center.availability = center.result.ajaxresult.slots.nextAvailableDate
+          center.availability = center.result ? center.result.ajaxresult.slots.nextAvailableDate : null;
           let center_container = $(`<div class="center-container"></div>`)
 
           if(center.availability==null){
