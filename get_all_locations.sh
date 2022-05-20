@@ -29,7 +29,7 @@ rm results.json errors_old.txt
 if [[ $git_upload == 'true' ]];
   then
     echo "$(date +'[%T] :') Pushing the latest data update back to github..."
-    git pull &&
+    git pull --depth=1 &&
     	git add ./docs/results.json ./docs/update-time.txt && 
     	git commit -m "data update" && 
     	git push --quiet
