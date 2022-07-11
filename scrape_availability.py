@@ -14,9 +14,11 @@ if(settings['headless']):
     chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36")
 driver = webdriver.Chrome(options=chrome_options)
 try:
     driver.get("https://www.myrta.com/wps/portal/extvp/myrta/login/")
+    # print(driver.page_source)
     driver.find_element(By.ID,"widget_cardNumber").send_keys(settings['username'])
     driver.find_element(By.ID,"widget_password").send_keys(settings['password'])
     time.sleep(settings['wait_timer'])
