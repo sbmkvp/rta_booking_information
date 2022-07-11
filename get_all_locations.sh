@@ -14,6 +14,7 @@ ERR_NUM="$(wc -l < errors.txt)"
 
 while [[ $ERR_NUM -gt 0 ]]
 do 
+  echo "$(date +'[%T] :') Errors - $ERR_NUM"
   mv errors.txt errors_old.txt
   cat errors_old.txt \
     | parallel "$python3_exe ./scrape_availability.py {} results.json || echo {} >> errors.txt" 
