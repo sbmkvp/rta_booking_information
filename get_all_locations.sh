@@ -24,7 +24,7 @@ echo "$(date +'[%T] :') Scraping process completed..."
 
 echo "$(date +'[%T] :') Reorganising results..."
 jq -s . results.json > ./docs/results.json &&
-echo "$(date +'%Y-%m-%d %H:%M%p')" > ./docs/update-time.txt && 
+echo "$(TZ="Australia/Sydney" date +'%Y-%m-%d %H:%M%p')" > ./docs/update-time.txt && 
 rm results.json errors_old.txt
 
 if [[ $git_upload == 'true' ]];
