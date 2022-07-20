@@ -14,20 +14,9 @@ RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
 ENV DISPLAY=:99
 
 
-COPY private_key /private_key
-RUN chmod 600 /private_key
-ENV GIT_SSH_COMMAND "ssh -i /private_key"
-RUN mkdir /root/.ssh/ \
- && touch /root/.ssh/known_hosts \
- && ssh-keyscan github.com >> /root/.ssh/known_hosts
-RUN git config --global user.email "sbm.kvp@gmail.com"
-RUN git config --global user.name "Bala S"
-RUN git config --global pull.rebase false
-RUN git clone --depth=1 git@github.com:sbmkvp/rta_booking_information.git /app
-RUN echo "Australia/Sydney" > /etc/timezone && \
-    rm /etc/localtime && \
-    ln -snf /usr/share/zoneinfo/Australia/Sydney /etc/localtime && \
-    dpkg-reconfigure -f noninteractive tzdata
+COPY gitconfig /root/.gitconfig
+COPY git-credentials /root/.git-credentials
+RUN git clone --depth=1 https://github.com/sbmkvp/rta_booking_information /app
 
 COPY settings.json /app/settings.json
 WORKDIR /app
