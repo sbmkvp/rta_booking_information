@@ -89,6 +89,23 @@ using the `create_status_report` script.
 ./create_status_report docs/centers.json docs/results.json
 ```
 
+### Containerised implementation
+
+The containerised implementation can be used to run this script on the cloud at regular intervals.
+If you want to host a github site with the results, please change the repo address in dockerfile to yours and then
+create the gitconfig and git-credential files from the samples provided. Then build the continer by doing,
+
+```
+docker build -t rta_booking_availability .
+```
+
+Once the image has been built you can run the container with regular update interval by,
+
+```
+docker run --restart unless-stopped --name rta_booking_availability -d rta_booking_availability
+```
+If your want to add a delay of n seconds between subsequent updates, add `sleep(n)` to the end of get_all_locations.shscript.
+
 ### Note
 
 This has been tested to work in my system but there are numerous edge cases 
