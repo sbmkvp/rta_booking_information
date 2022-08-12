@@ -1,5 +1,52 @@
 [
   {
+    "location": "17",
+    "result": {
+      "ajaxresult": {
+        "slots": {
+          "listTimeSlot": [
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "15/08/2022 9:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "16/08/2022 9:30"
+            },
+            {
+              "availability": true,
+              "slotNumber": 2,
+              "startTime": "17/08/2022 9:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "18/08/2022 9:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "19/08/2022 9:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "20/08/2022 9:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "21/08/2022 9:30"
+            }
+          ],
+          "nextAvailableDate": "17/08/2022 9:30"
+        }
+      }
+    }
+  },
+  {
     "location": "18",
     "result": {
       "ajaxresult": {
@@ -112,53 +159,6 @@
             }
           ],
           "nextAvailableDate": "24/08/2022 9:00"
-        }
-      }
-    }
-  },
-  {
-    "location": "17",
-    "result": {
-      "ajaxresult": {
-        "slots": {
-          "listTimeSlot": [
-            {
-              "availability": false,
-              "slotNumber": null,
-              "startTime": "15/08/2022 9:30"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
-              "startTime": "16/08/2022 9:30"
-            },
-            {
-              "availability": true,
-              "slotNumber": 2,
-              "startTime": "17/08/2022 9:30"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
-              "startTime": "18/08/2022 9:30"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
-              "startTime": "19/08/2022 9:30"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
-              "startTime": "20/08/2022 9:30"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
-              "startTime": "21/08/2022 9:30"
-            }
-          ],
-          "nextAvailableDate": "17/08/2022 9:30"
         }
       }
     }
@@ -1502,6 +1502,11 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "15/08/2022 14:00"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "15/08/2022 14:30"
             },
             {
@@ -1518,6 +1523,11 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "16/08/2022 9:15"
+            },
+            {
+              "availability": true,
+              "slotNumber": 23,
+              "startTime": "16/08/2022 14:00"
             },
             {
               "availability": false,
@@ -1538,6 +1548,11 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "17/08/2022 9:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "17/08/2022 14:00"
             },
             {
               "availability": true,
@@ -1562,6 +1577,11 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "18/08/2022 14:00"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "18/08/2022 14:30"
             },
             {
@@ -1575,9 +1595,14 @@
               "startTime": "19/08/2022 8:30"
             },
             {
-              "availability": true,
-              "slotNumber": 4,
+              "availability": false,
+              "slotNumber": null,
               "startTime": "19/08/2022 9:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "19/08/2022 14:00"
             },
             {
               "availability": false,
@@ -1602,6 +1627,11 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "20/08/2022 14:00"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "20/08/2022 14:30"
             },
             {
@@ -1618,6 +1648,11 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "21/08/2022 9:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "21/08/2022 14:00"
             },
             {
               "availability": false,
@@ -2797,8 +2832,8 @@
               "startTime": "16/08/2022 15:00"
             },
             {
-              "availability": false,
-              "slotNumber": null,
+              "availability": true,
+              "slotNumber": 11,
               "startTime": "16/08/2022 15:45"
             },
             {
@@ -7635,6 +7670,16 @@
               "startTime": "15/08/2022 9:15"
             },
             {
+              "availability": true,
+              "slotNumber": 15,
+              "startTime": "15/08/2022 11:30"
+            },
+            {
+              "availability": true,
+              "slotNumber": 24,
+              "startTime": "15/08/2022 13:45"
+            },
+            {
               "availability": false,
               "slotNumber": null,
               "startTime": "15/08/2022 15:30"
@@ -7648,6 +7693,16 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "16/08/2022 9:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "16/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "16/08/2022 13:45"
             },
             {
               "availability": false,
@@ -7667,6 +7722,16 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "17/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "17/08/2022 13:45"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "17/08/2022 15:30"
             },
             {
@@ -7678,6 +7743,16 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "18/08/2022 9:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "18/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "18/08/2022 13:45"
             },
             {
               "availability": true,
@@ -7697,6 +7772,16 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "19/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "19/08/2022 13:45"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "19/08/2022 15:30"
             },
             {
@@ -7712,6 +7797,16 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "20/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "20/08/2022 13:45"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "20/08/2022 15:30"
             },
             {
@@ -7723,6 +7818,16 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "21/08/2022 9:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "21/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "21/08/2022 13:45"
             },
             {
               "availability": false,
@@ -17079,11 +17184,6 @@
             {
               "availability": false,
               "slotNumber": null,
-              "startTime": "15/08/2022 14:00"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
               "startTime": "15/08/2022 14:45"
             },
             {
@@ -17100,11 +17200,6 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "16/08/2022 9:15"
-            },
-            {
-              "availability": true,
-              "slotNumber": 9,
-              "startTime": "16/08/2022 14:00"
             },
             {
               "availability": true,
@@ -17129,11 +17224,6 @@
             {
               "availability": false,
               "slotNumber": null,
-              "startTime": "17/08/2022 14:00"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
               "startTime": "17/08/2022 14:45"
             },
             {
@@ -17150,11 +17240,6 @@
               "availability": true,
               "slotNumber": 2,
               "startTime": "18/08/2022 9:15"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
-              "startTime": "18/08/2022 14:00"
             },
             {
               "availability": true,
@@ -17179,11 +17264,6 @@
             {
               "availability": false,
               "slotNumber": null,
-              "startTime": "19/08/2022 14:00"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
               "startTime": "19/08/2022 14:45"
             },
             {
@@ -17200,11 +17280,6 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "20/08/2022 9:15"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
-              "startTime": "20/08/2022 14:00"
             },
             {
               "availability": false,
@@ -17229,11 +17304,6 @@
             {
               "availability": false,
               "slotNumber": null,
-              "startTime": "21/08/2022 14:00"
-            },
-            {
-              "availability": false,
-              "slotNumber": null,
               "startTime": "21/08/2022 14:45"
             },
             {
@@ -17242,7 +17312,7 @@
               "startTime": "21/08/2022 15:30"
             }
           ],
-          "nextAvailableDate": "16/08/2022 14:00"
+          "nextAvailableDate": "16/08/2022 14:45"
         }
       }
     }
@@ -18529,6 +18599,11 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "15/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "15/08/2022 14:30"
             },
             {
@@ -18545,6 +18620,11 @@
               "availability": true,
               "slotNumber": 16,
               "startTime": "16/08/2022 10:45"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "16/08/2022 11:30"
             },
             {
               "availability": true,
@@ -18569,6 +18649,11 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "17/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "17/08/2022 14:30"
             },
             {
@@ -18585,6 +18670,11 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "18/08/2022 10:45"
+            },
+            {
+              "availability": true,
+              "slotNumber": 19,
+              "startTime": "18/08/2022 11:30"
             },
             {
               "availability": false,
@@ -18609,6 +18699,11 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "19/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "19/08/2022 14:30"
             },
             {
@@ -18629,6 +18724,11 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "20/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "20/08/2022 14:30"
             },
             {
@@ -18645,6 +18745,11 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "21/08/2022 10:45"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "21/08/2022 11:30"
             },
             {
               "availability": false,
@@ -18843,6 +18948,11 @@
               "startTime": "15/08/2022 11:30"
             },
             {
+              "availability": true,
+              "slotNumber": 8,
+              "startTime": "15/08/2022 14:15"
+            },
+            {
               "availability": false,
               "slotNumber": null,
               "startTime": "16/08/2022 8:15"
@@ -18851,6 +18961,11 @@
               "availability": false,
               "slotNumber": null,
               "startTime": "16/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "16/08/2022 14:15"
             },
             {
               "availability": false,
@@ -18865,12 +18980,22 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "17/08/2022 14:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "18/08/2022 8:15"
             },
             {
               "availability": true,
               "slotNumber": 5,
               "startTime": "18/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "18/08/2022 14:15"
             },
             {
               "availability": false,
@@ -18885,6 +19010,11 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "19/08/2022 14:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "20/08/2022 8:15"
             },
             {
@@ -18895,12 +19025,22 @@
             {
               "availability": false,
               "slotNumber": null,
+              "startTime": "20/08/2022 14:15"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
               "startTime": "21/08/2022 8:15"
             },
             {
               "availability": false,
               "slotNumber": null,
               "startTime": "21/08/2022 11:30"
+            },
+            {
+              "availability": false,
+              "slotNumber": null,
+              "startTime": "21/08/2022 14:15"
             }
           ],
           "nextAvailableDate": "15/08/2022 8:15"
