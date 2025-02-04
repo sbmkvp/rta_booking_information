@@ -18,7 +18,6 @@ chrome_options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 1
 driver = webdriver.Chrome(options=chrome_options)
 try:
     driver.get("https://www.myrta.com/wps/portal/extvp/myrta/login/")
-    # print(driver.page_source)
     driver.find_element(By.ID,"widget_cardNumber").send_keys(settings['username'])
     driver.find_element(By.ID,"widget_password").send_keys(settings['password'])
     time.sleep(settings['wait_timer'])
