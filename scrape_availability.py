@@ -15,7 +15,12 @@ if(settings['headless']):
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36")
+chrome_options.add_argument("--disable-blink-features=AutomationControlled") 
+chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"]) 
+chrome_options.add_experimental_option("useAutomationExtension", False) 
+
 driver = webdriver.Chrome(options=chrome_options)
+driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})") 
 try:
     driver.get("https://www.myrta.com/wps/portal/extvp/myrta/login/")
     driver.find_element(By.ID,"widget_cardNumber").send_keys(settings['username'])
