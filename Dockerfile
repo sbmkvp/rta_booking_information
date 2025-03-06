@@ -9,15 +9,14 @@ RUN apt-get install -y jq
 RUN apt-get install -y parallel
 RUN apt-get install -y git
 RUN apt-get install -yqq unzip
-RUN wget -O /tmp/chromedriver.zip http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip
-RUN unzip /tmp/chromedriver.zip chromedriver -d /usr/local/bin/
+RUN wget -O /tmp/chromedriver.zip https://storage.googleapis.com/chrome-for-testing-public/`curl -sS https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_STABLE`/linux64/chromedriver-linux64.zip
+RUN unzip /tmp/chromedriver.zip chromedriver-linux64/chromedriver -d /usr/local/bin/
 ENV DISPLAY=:99
 
 
 COPY gitconfig /root/.gitconfig
 COPY git-credentials /root/.git-credentials
 RUN git clone --depth=1 https://github.com/sbmkvp/rta_booking_information /app
-
 COPY settings.json /app/settings.json
 WORKDIR /app
 
