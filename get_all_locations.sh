@@ -8,7 +8,7 @@ git pull
 
 echo "$(date +'[%T] :') Starting the scraping process..."
 jq '.[].id' docs/centers.json \
-  | parallel "$python3_exe scrape_availability.py {} results.json || echo {} >> errors.txt"
+  | parallel -j 1 "$python3_exe scrape_availability.py {} results.json || echo {} >> errors.txt"
 
 ERR_NUM="$(wc -l < errors.txt)"
 
@@ -17,7 +17,7 @@ do
   echo "$(date +'[%T] :') Errors - $ERR_NUM"
   mv errors.txt errors_old.txt
   cat errors_old.txt \
-    | parallel "$python3_exe ./scrape_availability.py {} results.json || echo {} >> errors.txt" 
+    | parallel -j 1 "$python3_exe ./scrape_availability.py {} results.json || echo {} >> errors.txt" 
   ERR_NUM="$(wc -l < errors.txt)"
 done 
 echo "$(date +'[%T] :') Scraping process completed..."
