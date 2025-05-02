@@ -33,6 +33,7 @@ try:
         time.sleep(settings['wait_timer'])
     else:
         driver.find_element(By.XPATH,'//*[text()="Book test"]').click()
+        time.sleep(settings['wait_timer_car'])
         driver.find_element(By.ID,"CAR").click()
         time.sleep(settings['wait_timer_car'])
         driver.find_element(By.XPATH,"//fieldset[@id='DC']/span[contains(@class, 'rms_testItemResult')]").click()
