@@ -1,7 +1,7 @@
 
 ![github-header-image-2](https://github.com/user-attachments/assets/bfbf0a20-9e62-4826-84d7-21b684433964)
 
-This resource has been officially depreceated.
+This resource has been officially shut down.
 I don't have time to manage this anymore and please check 
 https://driverstest.noob.place/ more latest implementation.
 
