@@ -1,3 +1,11 @@
+
+![github-header-image-2](https://github.com/user-attachments/assets/bfbf0a20-9e62-4826-84d7-21b684433964)
+
+This resource has been officially depreceated.
+I don't have time to manage this anymore and please check 
+https://driverstest.noob.place/ more latest implementation.
+
+
 This script scrapes and stores the availability of timeslots for 
 Car Driving Test at all RTA Serivce NSW centres in the state. 
 
